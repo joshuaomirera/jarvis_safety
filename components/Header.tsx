@@ -143,6 +143,13 @@ export default function Header() {
             >
               Contact
             </Link>
+            <Link
+              href="/team"
+              className="block hover:text-blue-600"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Team
+            </Link>
             {admin ? (
               <>
                 <Link

@@ -10,7 +10,7 @@ const Footer = () => {
   const socialLinks = [
     {
       name: 'Email',
-      url: 'mailto:contact@jarvissafety.com',
+      url: 'mailto:jarvis_safety@yahoo.com',
       icon: '/images/icons/mail.png',
     },
     {
@@ -20,17 +20,17 @@ const Footer = () => {
     },
     {
       name: 'Twitter',
-      url: 'https://twitter.com/jarvissafety',
+      url: 'https://x.com/JarvisSafety',
       icon: '/images/icons/twitter.png',
     },
     {
       name: 'Facebook',
-      url: 'https://facebook.com/jarvissafety',
+      url: 'https://www.facebook.com/profile.php?id=61572405280323',
       icon: '/images/icons/facebook.png',
     },
     {
       name: 'LinkedIn',
-      url: 'https://linkedin.com/company/jarvis-safety',
+      url: 'https://www.linkedin.com/in/jarvis-safety-b4a0aa34a/',
       icon: '/images/icons/linkedin.png',
     },
   ]

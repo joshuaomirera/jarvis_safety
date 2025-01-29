@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: theme('colors.white');
+    --foreground: theme('colors.secondary');
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    background-image: url(/images/pattern.svg);
+    background-repeat: repeat;
+  }
+
+  h1 {
+    @apply text-4xl font-bold mb-6;
+  }
+
+  h2 {
+    @apply text-3xl font-semibold mb-4;
+  }
+
+  h3 {
+    @apply text-2xl font-medium mb-3;
+  }
+
+  p {
+    @apply mb-4 text-gray-600;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-6 py-3 rounded-lg font-semibold transition-colors;
+  }
+
+  .btn-primary {
+    @apply btn bg-primary text-white hover:bg-primary/90;
+  }
+
+  .btn-secondary {
+    @apply btn bg-secondary text-white hover:bg-secondary/90;
+  }
+
+  .section {
+    @apply py-section;
+  }
+
+  .container-content {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .card {
+    @apply bg-white rounded-lg shadow-md p-6;
+  }
+
+  .sidebar {
+    @apply hidden md:block fixed top-0 left-0 h-screen;
+    width: 16rem;
+  }
+
+  .main-with-sidebar {
+    @apply md:ml-64;
+  }
+}
+
+.arr {
+  display: flex;
+  gap: 2pc;
+  align-items: flex-start;
+  color: darkslateblue;
+  width: 80%;
+  padding: 2pc;
+  background-color: lightblue;
+  filter: saturate(0.5);
+  border: solid 1px rgba(128, 128, 128, 0.211);
+  border-radius: 7px;
+}
+
+.lft {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  min-height: 20pc;
+}
+
+.bg-blk {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.15) 0%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
+  backdrop-filter: blur(20px);
+}
+
+.bg {
+  background: rgba(255, 255, 255, 0.84);
+  backdrop-filter: blur(10px);
+}
+
+.d-fl {
+  display: flex;
+  gap: 2pc;
+  align-items: baseline;
+  flex-direction: row;
+  margin-top: 2pc;
+}
+
+.h-fl {
+  height: 100vh;
+}
+
+.text-bg {
+  color: var(--foreground);
+}
+
+.img-cstm {
+  filter: opacity(0.75);
+  background: #00000042;
+  border-radius: 50%;
+}

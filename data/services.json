@@ -1,0 +1,194 @@
+{
+  "services": [
+    {
+      "name": "Risk Assessment",
+      "description": "Detailed risk assessment and mitigation strategies",
+      "price": "KES 35,000",
+      "link": "/services/risk-assessment",
+      "category": "Safety Services",
+      "industry": ["Manufacturing"],
+      "categoryId": "manufacturing",
+      "categoryTitle": "Manufacturing"
+    },
+    {
+      "name": "Employee Training",
+      "description": "Manufacturing safety training programs",
+      "price": "KES 25,000",
+      "link": "/services/training",
+      "category": "Training Services",
+      "industry": ["Manufacturing"],
+      "categoryId": "manufacturing",
+      "categoryTitle": "Manufacturing"
+    },
+    {
+      "name": "Compliance Management",
+      "description": "Ongoing compliance monitoring and management",
+      "price": "KES 40,000",
+      "link": "/services/compliance",
+      "category": "Compliance Services",
+      "industry": ["Manufacturing"],
+      "categoryId": "manufacturing",
+      "categoryTitle": "Manufacturing"
+    },
+    {
+      "name": "Site Safety Management",
+      "description": "Comprehensive construction site safety management",
+      "price": "KES 60,000",
+      "link": "/services/site-safety",
+      "category": "Safety Services",
+      "industry": ["Construction"],
+      "categoryId": "construction",
+      "categoryTitle": "Construction"
+    },
+    {
+      "name": "Worker Safety Training",
+      "description": "Construction worker safety training programs",
+      "price": "KES 30,000",
+      "link": "/services/worker-training",
+      "category": "Training Services",
+      "industry": ["Construction"],
+      "categoryId": "construction",
+      "categoryTitle": "Construction"
+    },
+    {
+      "name": "Equipment Safety",
+      "description": "Construction equipment safety inspections",
+      "price": "KES 45,000",
+      "link": "/services/equipment-safety",
+      "category": "Safety Services",
+      "industry": ["Construction"],
+      "categoryId": "construction",
+      "categoryTitle": "Construction"
+    },
+    {
+      "name": "Compliance Audits",
+      "description": "Construction safety compliance audits",
+      "price": "KES 55,000",
+      "link": "/services/compliance-audits",
+      "category": "Audit Services",
+      "industry": ["Construction"],
+      "categoryId": "construction",
+      "categoryTitle": "Construction"
+    },
+    {
+      "name": "Medical Safety Protocols",
+      "description": "Healthcare facility safety protocols",
+      "price": "KES 45,000",
+      "link": "/services/medical-safety",
+      "category": "Medical Services",
+      "industry": ["Healthcare"],
+      "categoryId": "healthcare",
+      "categoryTitle": "Healthcare"
+    },
+    {
+      "name": "Infection Control",
+      "description": "Infection prevention and control programs",
+      "price": "KES 40,000",
+      "link": "/services/infection-control",
+      "category": "Medical Services",
+      "industry": ["Healthcare"],
+      "categoryId": "healthcare",
+      "categoryTitle": "Healthcare"
+    },
+    {
+      "name": "Staff Safety Training",
+      "description": "Healthcare staff safety training",
+      "price": "KES 35,000",
+      "link": "/services/staff-training",
+      "category": "Training Services",
+      "industry": ["Healthcare"],
+      "categoryId": "healthcare",
+      "categoryTitle": "Healthcare"
+    },
+    {
+      "name": "Facility Safety Audits",
+      "description": "Healthcare facility safety audits",
+      "price": "KES 50,000",
+      "link": "/services/facility-audits",
+      "category": "Audit Services",
+      "industry": ["Healthcare"],
+      "categoryId": "healthcare",
+      "categoryTitle": "Healthcare"
+    },
+    {
+      "name": "Farm Safety Programs",
+      "description": "Comprehensive farm safety management",
+      "price": "KES 40,000",
+      "link": "/services/farm-safety",
+      "category": "Safety Services",
+      "industry": ["Agriculture"],
+      "categoryId": "agriculture",
+      "categoryTitle": "Agriculture"
+    },
+    {
+      "name": "Equipment Safety",
+      "description": "Agricultural equipment safety inspections",
+      "price": "KES 35,000",
+      "link": "/services/ag-equipment",
+      "category": "Safety Services",
+      "industry": ["Agriculture"],
+      "categoryId": "agriculture",
+      "categoryTitle": "Agriculture"
+    },
+    {
+      "name": "Chemical Safety",
+      "description": "Agricultural chemical safety management",
+      "price": "KES 45,000",
+      "link": "/services/chemical-safety",
+      "category": "Hazardous Material Services",
+      "industry": ["Agriculture"],
+      "categoryId": "agriculture",
+      "categoryTitle": "Agriculture"
+    },
+    {
+      "name": "Worker Protection",
+      "description": "Farm worker safety programs",
+      "price": "KES 30,000",
+      "link": "/services/worker-protection",
+      "category": "Safety Services",
+      "industry": ["Agriculture"],
+      "categoryId": "agriculture",
+      "categoryTitle": "Agriculture"
+    },
+    {
+      "name": "Machinery Safety Audits",
+      "description": "Comprehensive machinery safety inspections",
+      "price": "KES 55,000",
+      "link": "/services/machinery-audits",
+      "category": "Audit Services",
+      "industry": ["Manufacturing", "Construction"],
+      "categoryId": "machines",
+      "categoryTitle": "Machines/Equipment"
+    },
+    {
+      "name": "Operator Training",
+      "description": "Machine operator safety training",
+      "price": "KES 40,000",
+      "link": "/services/operator-training",
+      "category": "Training Services",
+      "industry": ["Manufacturing", "Construction"],
+      "categoryId": "machines",
+      "categoryTitle": "Machines/Equipment"
+    },
+    {
+      "name": "Maintenance Safety",
+      "description": "Equipment maintenance safety protocols",
+      "price": "KES 45,000",
+      "link": "/services/maintenance-safety",
+      "category": "Safety Services",
+      "industry": ["Manufacturing", "Construction"],
+      "categoryId": "machines",
+      "categoryTitle": "Machines/Equipment"
+    },
+    {
+      "name": "Compliance Certification",
+      "description": "Equipment compliance certification",
+      "price": "KES 50,000",
+      "link": "/services/compliance-cert",
+      "category": "Compliance Services",
+      "industry": ["Manufacturing", "Construction"],
+      "categoryId": "machines",
+      "categoryTitle": "Machines/Equipment"
+    }
+  ]
+}

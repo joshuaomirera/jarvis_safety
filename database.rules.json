@@ -1,0 +1,12 @@
+{
+  "rules": {
+    "services": {
+      ".read": true,
+      ".write": "auth != null && auth.token.admin === true"
+    },
+    "bookings": {
+      ".read": "auth != null",
+      ".write": true
+    }
+  }
+}

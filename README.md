@@ -10,7 +10,7 @@ Jarvis Safety is a website for a workplace health and safety consultancy. It hel
 - **Explore safety services:** view services and filter the catalog by service category, industry, and price range. Available categories include training, audits, policies, compliance, hazardous materials, standardization, and medical services; industries include construction, manufacturing, healthcare, agriculture, mining, oil and gas, and transportation.
 - **Request a service booking:** open a service detail page and submit the booking form for that service.
 - **Ask questions:** use the on-site chatbot for information about services, pricing, training, and consultations.
-- **Get in touch:** use the contact page to compose a message. Note that the current contact form has no submission backend wired up yet.
+- **Get in touch:** submit a name, email address, and message using the contact form. Submissions are stored in the Firestore `contact-messages` collection for follow-up.
 
 ### For administrators
 
@@ -41,7 +41,7 @@ Jarvis Safety is a website for a workplace health and safety consultancy. It hel
    npm install
    ```
 
-2. Create `.env.local` in the project root and set the Firebase configuration used by `lib/firebase.ts`:
+2. Create `.env.local` in the project root and set the Firebase client configuration used by `lib/firebase.ts` and the server-only Firebase Admin credentials used by the contact API route:
 
    ```dotenv
    NEXT_PUBLIC_FIREBASE_API_KEY=
@@ -52,9 +52,14 @@ Jarvis Safety is a website for a workplace health and safety consultancy. It hel
    NEXT_PUBLIC_FIREBASE_APP_ID=
    NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID=
    NEXT_PUBLIC_FIREBASE_DATABASE_URL=
+
+   # Server-only service account credentials. Never use NEXT_PUBLIC_ for these.
+   FIREBASE_PROJECT_ID=
+   FIREBASE_CLIENT_EMAIL=
+   FIREBASE_PRIVATE_KEY="-----BEGIN PRIVATE KEY-----\\n...\\n-----END PRIVATE KEY-----\\n"
    ```
 
-   Configure Firebase Authentication providers, Firestore, and Realtime Database as needed in the Firebase project. Do not commit credentials or service-account private keys.
+   The Firebase service account needs permission to create documents in Firestore. Keep its private key out of source control and configure the same server-only variables in your deployment environment. Public contact submissions are written to `contact-messages`; review them using trusted admin tooling or the Firebase Console. Configure Firebase Authentication providers, Firestore, and Realtime Database as needed in the Firebase project.
 
 3. Start the development server:
 
@@ -90,4 +95,4 @@ The deployed site is available at [jarvis-safety.vercel.app](https://jarvis-safe
 
 ## Development notes
 
-This project is under active development. Some areas, such as contact-form submission, still need backend implementation. The admin and booking features rely on correctly configured Firebase services and security rules.
+This project is under active development. The contact form now validates submissions on the server and stores them in Firestore. The form includes a basic honeypot; before accepting significant public traffic, add a durable rate limit and/or CAPTCHA. Admin and booking features rely on correctly configured Firebase services and security rules.
